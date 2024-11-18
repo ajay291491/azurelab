@@ -13,7 +13,7 @@ resource "azurerm_subnet" "az-700-subnet" {
   address_prefixes     = ["10.0.2.0/24"]
 }
 
-resource "azurerm_network_interface" "example" {
+resource "azurerm_network_interface" "az-700-vm-nic" {
   name                = "az-700-vm-nic"
   location            = azurerm_resource_group.az-700-rg.location
   resource_group_name = azurerm_resource_group.az-700-rg.name
